@@ -14,7 +14,10 @@ describe("PalLaw application", () => {
     const editorDocument = createPalLawDocument(createMemoryDraftAdapter());
     render(() => <App editorDocument={editorDocument} createMap={() => ({ update: vi.fn(), dispatch: vi.fn(), dispose: vi.fn() })} />);
 
-    expect(screen.getByText(/Not affiliated with Pocketpair/)).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "PalLaw Rules Studio" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Nexus Mods" }).getAttribute("href")).toBe("https://www.nexusmods.com/palworld/mods/4193");
+    expect(screen.getByRole("link", { name: "Legal and map notices" }).getAttribute("href")).toBe("legal/");
+    expect(screen.getByText(/Not affiliated with Pocketpair/).closest(".map-footer")).toBeTruthy();
     expect(screen.getByLabelText("Area map").hasAttribute("hidden")).toBe(false);
     await fireEvent.click(screen.getByRole("button", { name: "Settings" }));
     const hotReload = screen.getByRole("checkbox", { name: "Hot reload" });

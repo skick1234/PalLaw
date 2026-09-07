@@ -40,4 +40,4 @@ These files are included for geographic editing in an unofficial fan tool. Their
 
 ## Rights-holder requests
 
-Rights holders may open an issue at `https://github.com/skick1234/Palworld/issues` identifying the affected material. I will review removal or replacement requests promptly.
+Rights holders may open an issue at `https://github.com/skick1234/PalLaw/issues` identifying the affected material. I will review removal or replacement requests promptly.

@@ -182,7 +182,7 @@ export function createLeafletMap(element: HTMLElement, callbacks: MapCallbacks, 
       const north = mapDefinition.canvas.height - y * tileHeight;
       const south = north - tileHeight;
       baseLayers.addLayer(port.imageOverlay(
-        `${mapDefinition.tiles.root}/z${mapDefinition.tiles.zoom}x${x}y${y}.webp`,
+        `pallaw/${mapDefinition.tiles.root}/z${mapDefinition.tiles.zoom}x${x}y${y}.webp`,
         [[south, west], [north, east]], { interactive: false, opacity: 1 }
       ));
     }

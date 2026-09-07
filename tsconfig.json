@@ -15,7 +15,6 @@
     "types": ["vite/client", "node"]
   },
   "include": [
-    "apps/landing/src", "apps/landing/tests",
     "apps/legal/src", "apps/legal/tests",
     "apps/pallaw/src", "apps/pallaw/tests",
     "apps/shared/src", "apps/shared/tests",

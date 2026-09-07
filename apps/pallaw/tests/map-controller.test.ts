@@ -88,7 +88,7 @@ describe("MapController", () => {
     handlers.get("click")?.({ latlng: { lat: 200, lng: 200, distanceTo: () => 10 } });
     controller.dispatch({ type: "finish-drawing" });
 
-    expect(overlays).toEqual(["assets/map/z2x0y0.webp"]);
+    expect(overlays).toEqual(["pallaw/assets/map/z2x0y0.webp"]);
     expect(polygons).toHaveLength(renderedPolygonCount);
     expect(onSelect).toHaveBeenCalledWith(0);
     expect(onCoordinate).toHaveBeenCalledWith(expect.stringContaining("Map X"));

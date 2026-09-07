@@ -1,30 +1,16 @@
-# Palworld Mods
+# PalOrbit
 
-> Focused tools, regional rules, and cloud operations for dedicated Palworld servers.
+> PalLaw Rules Studio is the free browser editor for PalLaw, a Palworld server rules mod.
 
-## Overview
+## PalLaw Rules Studio
 
-Palworld Mods is an unofficial fan-made project created by Skick providing tools for Palworld dedicated server operators:
+Draw regions on the World and World Tree maps, assign modes and schedules, edit player actions and combat permissions, validate a rulebook, and export PalLaw.json. Configuration stays in the browser. No account or configuration uploads are required.
 
-- **PalLaw (Offline)**: Standalone, offline C++ UE4SS mod and browser Rules Studio for regional combat laws and safe zones configured via local `PalLaw.json`.
-- **PalOrbit (Cloud Platform)**: Cloud-hosted SaaS platform and native C++ UE4SS mod (`PalOrbit.dll`) featuring Cloud Zone Studio, live map telemetry, Discord Cross-Chat Relay, role-based privileges, and web starter kit claims.
-- **Rules Studio**: Static web tool for visual polygon authoring and PalLaw JSON configuration validation. Runs entirely in the client browser with zero server upload.
+- [PalLaw Rules Studio](https://pallaw.palorbit.app/)
+- [Download PalLaw on Nexus Mods](https://www.nexusmods.com/palworld/mods/4193)
+- [Configuration schema](https://pallaw.palorbit.app/pallaw/PalLaw.schema.json)
+- [Example rulebook](https://pallaw.palorbit.app/pallaw/example.PalLaw.json)
+- [Legal and map notices](https://pallaw.palorbit.app/legal/)
+- [Full reference](https://pallaw.palorbit.app/llms-full.txt)
 
-## Products
-
-### PalLaw (Offline Standalone Mod)
-- **Website & Editor**: https://palworld.skick.xyz/pallaw/
-- **Nexus Mods Download**: https://www.nexusmods.com/palworld/mods/4193
-- **Primary Function**: Regional player-vs-player and combat restrictions. Does not enable damage on globally PvE servers; restricts combat inside defined polygon regions on PvP servers.
-- **Storage & Telemetry**: 100% offline. No analytics, no telemetry, no tracking.
-
-### PalOrbit (Cloud Platform)
-- **Web App**: https://palorbit.app
-- **Primary Function**: Unified server operations with Cloud Zone Studio, live player map telemetry, bi-directional Discord Cross-Chat Relay, and web-based kit fulfillment.
-- **Architecture**: Outbound encrypted TLS connection from `PalOrbit.dll` to the PalOrbit Cloud Gateway. Zero inbound ports required.
-
-## Legal and Non-Affiliation
-- **Maintainer**: Skick (https://github.com/skick1234)
-- **Repository**: https://github.com/skick1234/Palworld
-- **Discord Community**: https://discord.gg/zzhK54aaYz
-- **Disclaimer**: Unofficial fan-made project. Not affiliated with, endorsed by, sponsored by, or approved by Pocketpair, Inc.
+Maintained by Skick. Unofficial fan project, not affiliated with Pocketpair. Palworld materials belong to their respective owners.

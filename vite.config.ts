@@ -13,7 +13,6 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     rollupOptions: {
       input: {
-        landing: resolve(root, "apps/landing/src/main.tsx"),
         legal: resolve(root, "apps/legal/src/main.tsx"),
         pallaw: resolve(root, "apps/pallaw/src/main.tsx")
       },

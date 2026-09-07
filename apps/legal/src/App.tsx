@@ -4,12 +4,12 @@ export function App() {
   return <>
     <a class="skip-link" href="#legal-content">Skip to content</a>
     <header class="site-header">
-      <a class="wordmark" href="../" aria-label="Palworld Mods home">Palworld <b>/ Mods</b></a>
+      <a class="wordmark" href="../" aria-label="PalOrbit home">PalOrbit</a>
       <nav aria-label="Primary navigation">
-        <a class="product-link" href="../pallaw/">PalLaw</a>
+        <a class="product-link" href="../">Rules Studio</a>
         <a class="product-link" href="https://palorbit.app" target="_blank" rel="noreferrer">PalOrbit</a>
         <a class="utility-link" href="./" aria-current="page">Legal</a>
-        <a class="utility-link" href="https://github.com/skick1234/Palworld">GitHub</a>
+        <a class="utility-link" href="https://github.com/skick1234/PalLaw">GitHub</a>
         <a class="discord-link" href="https://discord.gg/zzhK54aaYz" target="_blank" rel="noreferrer">Discord</a>
         <SupportControl />
         <ThemeToggle />
@@ -22,7 +22,7 @@ export function App() {
 
       <section id="non-affiliation">
         <h2>Non-affiliation</h2>
-        <p><strong>PalLaw and Palworld Mods are unofficial community projects. They are not affiliated with, endorsed by, sponsored by, or approved by Pocketpair, Inc.</strong> Palworld and all related names, trademarks, map imagery, and game assets are the property of their respective owners. I do not claim ownership of those materials.</p>
+        <p><strong>PalLaw and PalOrbit are unofficial community projects. They are not affiliated with, endorsed by, sponsored by, or approved by Pocketpair, Inc.</strong> Palworld and all related names, trademarks, map imagery, and game assets are the property of their respective owners. I do not claim ownership of those materials.</p>
       </section>
 
       <section id="about">
@@ -32,7 +32,7 @@ export function App() {
 
       <section id="contact">
         <h2>Contact & community</h2>
-        <p>Join the community and ask questions in the official <a href="https://discord.gg/zzhK54aaYz" target="_blank" rel="noreferrer">Discord server</a>. For bug reports, code issues, or removal requests, open an issue on the <a href="https://github.com/skick1234/Palworld/issues" target="_blank" rel="noreferrer">GitHub repository</a>.</p>
+        <p>Join the community and ask questions in the official <a href="https://discord.gg/zzhK54aaYz" target="_blank" rel="noreferrer">Discord server</a>. For bug reports, code issues, or removal requests, open an issue on the <a href="https://github.com/skick1234/PalLaw/issues" target="_blank" rel="noreferrer">GitHub repository</a>.</p>
       </section>
 
       <section id="privacy">
@@ -48,7 +48,7 @@ export function App() {
       <section id="map-imagery">
         <h2>Map imagery</h2>
         <p>The bundled world and World Tree map imagery is Palworld game material owned by Pocketpair, Inc. Its inclusion in this unofficial fan-made editor does not claim ownership, endorsement, or a license grant.</p>
-        <p>See the repository's <a href="https://github.com/skick1234/Palworld/blob/main/THIRD_PARTY_NOTICES.md">third-party notices</a> and Pocketpair's <a href="https://www.pocketpair.jp/en/guidelines-derivativework-en/">Guidelines for Derivative Works</a>.</p>
+        <p>See the repository's <a href="https://github.com/skick1234/PalLaw/blob/main/THIRD_PARTY_NOTICES.md">third-party notices</a> and Pocketpair's <a href="https://www.pocketpair.jp/en/guidelines-derivativework-en/">Guidelines for Derivative Works</a>.</p>
       </section>
 
       <section id="donations">
@@ -59,7 +59,7 @@ export function App() {
 
     <footer>
       <p><strong>Unofficial fan-made project created by Skick.</strong><br />Palworld materials remain the property of their respective owners.</p>
-      <p><a href="../pallaw/">Open Rules Studio</a></p>
+      <p><a href="../">Open Rules Studio</a></p>
     </footer>
   </>;
 }

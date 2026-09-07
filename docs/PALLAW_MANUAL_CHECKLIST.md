@@ -28,5 +28,6 @@ The automated domain, document, Solid component, map-adapter, contract, and stat
 
 - Toggle every theme and reload; confirm the choice persists and all previews remain legible.
 - Open Donate, confirm Ko-fi is not loaded before interaction, close/reopen the dialog, and confirm editor controls are unobscured when closed.
-- Open Discord and Legal links and confirm the Pocketpair non-affiliation notice remains visible at supported desktop widths.
-- Confirm the deployed Pages artifact contains only `site/`, has no source maps, and works at the repository subpath with browser networking showing no configuration, telemetry, or upload requests.
+- Open Nexus Mods, Discord, and Legal and map notices links. Confirm the non-affiliation statement is in the map footer, wraps without overlapping coordinates, and remains visible whenever the map is shown at desktop and mobile widths.
+- Load the root entry with JavaScript enabled and disabled. Verify the exact title PalLaw Rules Studio, PalOrbit site metadata, readable fallback, and no duplicate heading after the editor mounts. Verify World and World Tree tiles load from the retained `/pallaw/assets/` paths.
+- Confirm the deployed Pages artifact contains only `site/`, has no source maps, and works at the custom-domain root with browser networking showing no configuration, telemetry, or upload requests.

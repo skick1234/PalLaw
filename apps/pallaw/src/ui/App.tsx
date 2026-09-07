@@ -259,7 +259,7 @@ export function App(props: AppProps) {
   return <>
     <a class="skip-link" href="#workspace">Skip to editor</a>
     <div class="app-shell">
-      <header class="topbar"><div class="topbar-main"><div class="brand-block"><div><div class="eyebrow">PalLaw</div><h1>Rules Studio</h1></div></div><p class="non-affiliation">Unofficial fan project · Not affiliated with Pocketpair</p>
+      <header class="topbar"><div class="topbar-main"><div class="brand-block"><div><div class="eyebrow">PalOrbit</div><h1>PalLaw Rules Studio</h1></div></div>
         <div class="top-actions">
           <div class="history-actions" aria-label="Change history">
             <button class="icon-button history-button" type="button" aria-label="Undo" disabled={!snapshot().canUndo} onClick={() => { props.editorDocument.dispatch({ type: "undo" }); }}><span class="hero-icon hero-icon-arrow-uturn-left" aria-hidden="true" /></button>
@@ -269,6 +269,7 @@ export function App(props: AppProps) {
           <button class="button ghost" type="button" onClick={() => { importInput.click(); }}>Import</button>
           <button class="button primary" type="button" aria-label="Export PalLaw.json" disabled={!snapshot().validation.valid} onClick={() => { const exported = props.editorDocument.export(); download(exported.fileName, exported.contents); props.editorDocument.dispatch({ type: "mark-exported" }); toast(`${exported.fileName} exported.`); }}><span class="export-label-full">Export PalLaw.json</span><span class="export-label-short">Export</span></button>
           <div class="top-actions-divider" aria-hidden="true" />
+          <a class="button nexus-link" href="https://www.nexusmods.com/palworld/mods/4193" target="_blank" rel="noreferrer">Nexus Mods</a>
           <a class="discord-link" href="https://discord.gg/zzhK54aaYz" target="_blank" rel="noreferrer">Discord</a>
           <SupportControl />
           <ThemeToggle />
@@ -283,7 +284,7 @@ export function App(props: AppProps) {
           <button class="button compact primary" type="button" hidden={drawing() || model.state.activeSection === "schedules"} onClick={() => { setEditingShape(false); mapController?.dispatch({ type: "start-drawing" }); }}>Draw region</button>
           <button class="button compact success" type="button" hidden={!drawing()} disabled={drawPointCount() < 3} onClick={() => { mapController?.dispatch({ type: "finish-drawing" }); }}>Finish</button>
           <button class="button compact danger" type="button" hidden={!drawing()} onClick={() => { mapController?.dispatch({ type: "cancel-drawing" }); }}>Cancel</button><button class="button compact ghost" type="button" onClick={() => { mapController?.dispatch({ type: "fit-visible" }); }}>Fit</button></div></div>
-          <div ref={mapElement} class="map" tabindex="0" aria-label="Interactive coordinate map" /><div class="draw-hint" hidden={!drawing()} aria-live="polite">Click to add vertices. Double-click or choose Finish after at least three points. Press Escape to cancel.</div><div class="map-footer"><span id="coordinateReadout" class="mono">{coordinateReadout()}</span><a class="legal-link" href="../legal/">Unofficial | Map notice</a></div></div></section>
+          <div ref={mapElement} class="map" tabindex="0" aria-label="Interactive coordinate map" /><div class="draw-hint" hidden={!drawing()} aria-live="polite">Click to add vertices. Double-click or choose Finish after at least three points. Press Escape to cancel.</div><div class="map-footer"><span id="coordinateReadout" class="mono">{coordinateReadout()}</span><div class="map-notices" data-nosnippet><span>Unofficial fan project · Not affiliated with Pocketpair</span><a class="legal-link" href="legal/">Legal and map notices</a></div></div></div></section>
         <aside class="workspace-pane workspace-content inspector-panel" data-workspace-pane="edit" aria-label="Selected item editor"><div class="inspector-core"><div class="inspector-content">
           <Show when={model.state.activeSection === "modes"}>{selectedMode() ? <ModeInspector mode={selectedMode()!} messages={messageCollection()} resolvedMessages={messageResolved({ mode: selectedMode()!.id, messages: selectedMode()!.messages })} onChange={applyModeIntent} /> : null}</Show>
           <Show when={model.state.activeSection === "schedules"}>{selectedSchedule() ? <ScheduleInspector schedule={selectedSchedule()!} modes={config().modes} wilderness={config().wilderness} stageAreas={config().stageAreas} regions={config().regions} onUpdate={(apply) => { commands.updateSchedule(model.state.selectedScheduleIndex, apply); }} onAssign={(kind, index, assigned) => { commands.setScheduleArea(selectedSchedule()!.id, kind, index, assigned); }} /> : null}</Show>

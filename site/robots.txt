@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://palworld.skick.xyz/sitemap.xml
+Sitemap: https://pallaw.palorbit.app/sitemap.xml
